@@ -35,12 +35,12 @@ export default function Hero() {
         <div className="hero-portrait-wrap">
           <div className="portrait-halo" />
           <div className="portrait-frame">
-            <img
-              src="/pooja-cutout.webp"
-              alt="Pooja Suresh S"
-              className="hero-portrait"
-              onError={(event) => { event.currentTarget.style.display = 'none' }}
-            />
+            <div className="pooja-slices" role="img" aria-label="Portrait of Pooja Suresh S">
+              <img src="/pooja-slice-1.webp" alt="" />
+              <img src="/pooja-slice-2.webp" alt="" />
+              <img src="/pooja-slice-3.webp" alt="" />
+              <img src="/pooja-slice-4.webp" alt="" />
+            </div>
             <div className="portrait-fallback" aria-hidden="true">
               <span>N.</span>
               <small>PORTRAIT</small>
