@@ -421,3 +421,118 @@ code { padding: 2px 5px; border-radius: 4px; background: rgba(227,181,240,.12); 
   height: 25%;
   object-fit: fill;
 }
+
+
+/* Restored visual archive from the previous portfolio's embedded SNAP images. */
+.case-project-overview {
+  padding: 28px clamp(20px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: linear-gradient(115deg, rgba(251,247,238,.065), rgba(251,247,238,.018));
+}
+.case-project-overview .case-study-copy {
+  max-width: 840px;
+  padding: 0;
+}
+.case-project-overview .case-study-copy h3 {
+  max-width: 780px;
+}
+.case-project-overview .case-study-copy p {
+  max-width: 820px;
+  line-height: 1.9;
+}
+.case-project-overview .case-actions {
+  margin-top: 20px;
+}
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 18px;
+  margin-top: 24px;
+}
+.project-media {
+  min-width: 0;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(251,247,238,.035);
+}
+.project-media img {
+  display: block;
+  width: 100%;
+  height: 225px;
+  object-fit: contain;
+  background: rgba(0,0,0,.18);
+}
+.project-media figcaption {
+  display: grid;
+  gap: 7px;
+  min-height: 94px;
+  padding: 15px 16px 17px;
+}
+.project-media figcaption b {
+  color: var(--color-chalk);
+  font: 600 17px var(--font-display);
+}
+.project-media figcaption span {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.75;
+}
+.case-pdf-section {
+  margin-top: 30px;
+}
+.case-pdf-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.case-pdf-heading h3 {
+  margin: 8px 0 0;
+  color: var(--color-chalk);
+  font: 28px var(--font-display);
+}
+.case-pdf-note {
+  margin: 18px 0 0;
+  color: var(--muted-soft);
+  font-size: 10px;
+  line-height: 1.8;
+}
+.about-intro {
+  min-width: 0;
+}
+.about-archive-photo {
+  width: min(100%, 340px);
+  margin: 28px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(251,247,238,.04);
+}
+.about-archive-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.about-archive-photo figcaption {
+  padding: 11px 13px;
+  color: var(--muted-soft);
+  font-size: 8px;
+  letter-spacing: .13em;
+}
+@media (max-width: 900px) {
+  .project-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .project-gallery { grid-template-columns: 1fr; }
+  .project-media img { height: auto; max-height: 320px; }
+  .case-project-overview { padding: 23px 18px; }
+  .case-pdf-heading { align-items: start; flex-direction: column; }
+  .about-archive-photo { width: min(100%, 250px); }
+}

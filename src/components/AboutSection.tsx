@@ -6,9 +6,13 @@ export default function AboutSection() {
   return (
     <section className="section-wrap content-section about-section" id="about">
       <div className="about-grid">
-        <div>
+        <div className="about-intro">
           <span className="eyebrow section-eyebrow">A LITTLE CONTEXT</span>
           <h2 className="section-title">The learner <em>behind</em> the notes.</h2>
+          <figure className="about-archive-photo">
+            <img src="/images/pooja-previous-profile.webp" alt="Pooja, in a portrait from her previous portfolio" loading="lazy" />
+            <figcaption>ANOTHER PHOTO FROM THE PREVIOUS PORTFOLIO</figcaption>
+          </figure>
         </div>
         <div className="about-copy">
           <p className="about-lede">{profile.bio}</p>
@@ -32,7 +36,6 @@ export default function AboutSection() {
               {profile.resumeUrl ? <a href={profile.resumeUrl} target="_blank" rel="noreferrer">Resume <span>↗</span></a> : null}
             </div>
           ) : <p className="small-note">Contact links can be added in src/data/profile.ts when they are ready to be shared.</p>}
-          <p className="small-note">The previous portfolio lists her NLP course repository and project write-up, slides and demo links.</p>
         </div>
       </div>
       <div className="about-signoff"><span>KEEP ASKING GOOD QUESTIONS.</span><strong>One page at a time <i>✳</i></strong></div>
