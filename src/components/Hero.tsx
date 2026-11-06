@@ -1,34 +1,62 @@
-// src/components/Hero.tsx
-import StatCallout from './StatCallout'
 import { profile } from '../data/profile'
 import { getStats } from '../lib/stats'
+import StatCallout from './StatCallout'
+import CurlArrow from './CurlArrow'
 
 export default function Hero() {
   const stats = getStats()
+  const ownerText = profile.name === 'Your Name' ? 'a student’s' : profile.name + '’s'
 
   return (
-    <header className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-      <h1 className="font-display text-5xl font-bold text-marigold md:text-7xl">
-        Hi, I’m {profile.name}!
-      </h1>
-      <p className="mt-3 text-lg text-sandstone">{profile.tagline}</p>
+    <section className="hero section-wrap" id="home">
+      <div className="hero-topline">
+        <span className="eyebrow"><i /> Natural language processing · Course portfolio</span>
+        <span className="hero-edition">A learning journal <b>2026</b></span>
+      </div>
 
-      <div className="mt-14 grid items-center gap-10 md:grid-cols-[1fr_auto_1fr]">
-        <div className="flex flex-col gap-16 md:gap-28">
-          <StatCallout value={stats.questions} label="questions answered in class" towards="right" />
-          <StatCallout value={stats.stars} label="stars from faculty" towards="right" />
+      <div className="hero-grid">
+        <div className="hero-copy">
+          <p className="hero-intro">Curiosity, captured.</p>
+          <h1>Every question.<br />Every <em>insight.</em><br />Every milestone.</h1>
+          <p className="hero-description">
+            A living record of {ownerText} NLP learning journey — from classroom questions and practical explorations to projects and academic work.
+          </p>
+          <div className="hero-actions">
+            <a className="button button-primary" href="#questions">Explore the journey <span>↗</span></a>
+            <a className="button button-quiet" href="#notebooks">View practical work</a>
+          </div>
+          <div className="hero-footnote"><span>LEARN WITH CURIOSITY</span><i /><span>GROW WITH EVIDENCE</span></div>
         </div>
 
-        <img
-          src="/hero-placeholder.svg"
-          alt="Portrait placeholder"
-          className="cutout mx-auto w-64 md:w-80"
-        />
-
-        <div>
-          <StatCallout value={stats.notebooks} label="lab notebooks completed" towards="left" />
+        <div className="hero-art" aria-label="Portfolio highlights">
+          <div className="orbit orbit-one" />
+          <div className="orbit orbit-two" />
+          <div className="portrait-halo" />
+          <div className="portrait-frame">
+            <img src="/hero-cutout.png" alt="Portrait of the portfolio owner" className="hero-portrait" onError={(event) => { event.currentTarget.style.display = 'none' }} />
+            <div className="portrait-fallback" aria-hidden="true"><span>N.</span><small>LEARNING IN PROGRESS</small></div>
+          </div>
+          <div className="floating-note note-top">
+            <span className="note-icon">✦</span>
+            <span><small>THE LEARNING JOURNEY</small><b>NLP enthusiast</b></span><i />
+          </div>
+          <div className="floating-note note-bottom">
+            <span className="note-icon note-star">✦</span>
+            <span><small>THE GOAL</small><b>Learn. Build. Grow.</b></span>
+          </div>
+          <span className="art-caption art-caption-left">NLP / LEARN</span>
+          <span className="art-caption art-caption-right">PORTFOLIO / EXPLORE</span>
         </div>
       </div>
-    </header>
+
+      <div className="hero-metrics">
+        <div className="hero-metric-intro"><span className="eyebrow">THE JOURNEY SO FAR</span><p>Small steps. Real progress.</p></div>
+        <StatCallout value={stats.questions} label="Questions answered" />
+        <StatCallout value={stats.stars} label="Faculty stars earned" />
+        <StatCallout value={stats.notebooks} label="Practical notebooks" />
+      </div>
+      <div className="hero-bottom-line"><span>01 / A PORTFOLIO OF PRACTICE</span><span>SCROLL TO EXPLORE ↓</span></div>
+      <CurlArrow className="hero-scribble" />
+    </section>
   )
 }

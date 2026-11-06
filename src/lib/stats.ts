@@ -1,5 +1,14 @@
-// src/lib/stats.ts
-// Placeholder numbers. Phase 3 replaces these with values computed from qa.json.
+import qa from '../data/qa.json'
+import { notebooks } from '../data/notebooks'
+import type { QAEntry } from '../types/portfolio'
+
 export function getStats() {
-  return { questions: 47, stars: 62, notebooks: 9 }
+  const entries = qa as QAEntry[]
+  const topics = new Set(entries.map((entry) => entry.topic.trim()).filter(Boolean))
+  return {
+    questions: entries.length,
+    stars: entries.reduce((total, entry) => total + Math.max(0, Number(entry.stars) || 0), 0),
+    topics: topics.size,
+    notebooks: notebooks.length,
+  }
 }
