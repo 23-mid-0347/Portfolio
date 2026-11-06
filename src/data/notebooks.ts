@@ -1,5 +1,5 @@
 import type { NotebookSummary } from '../types/notebook'
 
-// Generated from content/notebooks/raw by python scripts/convert_notebooks.py.
-// Keep real notebook metadata here; do not add sample work or placeholder records.
+// The previous portfolio links to these source notebooks. Their .ipynb files
+// should be added under content/notebooks/raw/ before enabling the notebook reader.
 export const notebooks: NotebookSummary[] = []

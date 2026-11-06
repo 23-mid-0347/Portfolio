@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "date": "",
+    "topic": "Finite-State Transducers (FST)",
+    "question": "List five words that I used during today's class.",
+    "answer": "1) Transducers  2) Nominal inflection  3) Morphotactics  4) Orthographic rules  5) Lexicon",
+    "stars": 1
+  }
+]

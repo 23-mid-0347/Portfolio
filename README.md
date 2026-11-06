@@ -18,13 +18,13 @@ Production build:
 
 ### Profile
 
-Edit src/data/profile.ts with the learner's actual name, institution, bio, and any public contact links. The page intentionally does not invent personal details.
+Edit src/data/profile.ts with the learner's profile. The previous portfolio supplied the course, register number, faculty guide, project repository and project-resource links; email and personal GitHub details were supplied separately in this update.
 
-The hero uses Pooja's transparent cutout at public/pooja-cutout.webp. Replace this image only with an approved portrait, and update the image path in src/components/Hero.tsx.
+The hero portrait is stored as four aligned transparent strips in public/pooja-slice-1.webp through public/pooja-slice-4.webp.
 
 ### Classroom questions
 
-Add entries to src/data/qa.json using this structure:
+The previous portfolio contained one recorded FST question. It has been transferred to src/data/qa.json, with its date left blank because none was recorded. Add further real questions using this structure:
 
     [
       {
@@ -85,4 +85,4 @@ Edit src/data/profile.ts. Only non-empty email, GitHub, LinkedIn, and resume fie
 
 ## Current content status
 
-The code includes honest empty states. Add the real profile, question entries, notebooks, and case-study PDF before presenting the portfolio as complete. Do not leave sample or placeholder achievements in the published version.
+The code includes honest empty states. The profile, one saved FST question, the project links and the corpus/project descriptions have been carried over from the previous portfolio. The linked source notebooks are not bundled here: add their original .ipynb files to content/notebooks/raw/ and run the converter. No case-study PDF was present in the supplied previous portfolio snapshot; add the final approved PDF before enabling the viewer. The old header's 47 questions, 62 stars and 9 notebooks were not retained as totals because the saved content snapshot did not substantiate those aggregate figures.

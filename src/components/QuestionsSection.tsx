@@ -110,7 +110,7 @@ export default function QuestionsSection() {
               <article className="question-item" key={item.date + '-' + index}>
                 <span className="question-number">{String(index + 1).padStart(2, '0')}</span>
                 <div className="question-copy">
-                  <div className="question-meta"><span>{item.topic}</span><time dateTime={item.date}>{item.date}</time></div>
+                  <div className="question-meta"><span>{item.topic}</span>{item.date ? <time dateTime={item.date}>{item.date}</time> : <span>Class question</span>}</div>
                   <h4>{item.question}</h4><p>{item.answer}</p>
                 </div>
                 <span className="question-stars">{'★'.repeat(Math.max(0, Math.min(5, item.stars)))}</span>

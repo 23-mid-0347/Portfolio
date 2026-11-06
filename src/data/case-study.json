@@ -1,5 +1,5 @@
 {
-  "title": "",
-  "summary": "",
+  "title": "PromptVault: Query-Aware Compression of Chat History for LLMs",
+  "summary": "Course project exploring query-aware compression of conversational history. The saved portfolio describes a pipeline that combines sentence-embedding similarity and BM25 relevance, assigns messages to keep, compress or drop tiers under a token budget, and reassembles the retained context in order. A single synthetic recall run reported 662 input tokens for full history versus 167 for PromptVault, with both returning the planted code ORBIT-731; the previous portfolio notes that this is one observation, not a benchmark.",
   "pageCount": null
 }
