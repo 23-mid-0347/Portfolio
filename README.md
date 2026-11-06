@@ -20,7 +20,7 @@ Production build:
 
 Edit src/data/profile.ts with the learner's actual name, institution, bio, and any public contact links. The page intentionally does not invent personal details.
 
-The page currently uses public/hero-placeholder.svg. When the approved transparent portrait is ready, save it as public/hero-cutout.png and change the image path in src/components/Hero.tsx.
+The hero uses Pooja's transparent cutout at public/pooja-cutout.webp. Replace this image only with an approved portrait, and update the image path in src/components/Hero.tsx.
 
 ### Classroom questions
 

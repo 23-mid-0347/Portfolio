@@ -1,9 +1,9 @@
 export const profile = {
-  name: 'Your Name',
-  tagline: 'NLP student at Your College',
-  college: 'Your College',
+  name: 'Pooja Suresh S',
+  tagline: 'NLP Student at Vellore Institute of Technology',
+  college: 'Vellore Institute of Technology',
   location: '',
-  bio: 'I am documenting my Natural Language Processing learning journey through classroom questions, practical experiments, and academic work. This portfolio brings the process together in one place — not just the finished outcomes, but the questions and practice behind them.',
+  bio: 'I’m Pooja Suresh S, an NLP student at Vellore Institute of Technology. This portfolio documents my learning through classroom questions, practical notebooks, and a course case study.',
   email: '',
   github: '',
   linkedin: '',
