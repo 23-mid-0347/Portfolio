@@ -390,3 +390,7 @@ code { padding: 2px 5px; border-radius: 4px; background: rgba(227,181,240,.12); 
   .pdf-mobile-card { align-items: flex-start; flex-wrap: wrap; }
   .pdf-mobile-actions { width: 100%; padding-left: 63px; }
 }
+
+@media (max-width: 640px) {
+  .pdf-mobile-card { display: flex; }
+}
