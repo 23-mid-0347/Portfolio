@@ -378,3 +378,15 @@ code { padding: 2px 5px; border-radius: 4px; background: rgba(227,181,240,.12); 
   .pdf-mobile-card { display: flex; }
 }
 .pdf-mobile-card { display: none; }
+
+.pdf-mobile-card { align-items: center; gap: 15px; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: rgba(251,247,238,.045); }
+.pdf-mobile-icon { width: 48px; height: 58px; display: grid; place-items: center; flex: 0 0 auto; border: 1px solid rgba(242,182,50,.55); border-radius: 7px; color: var(--color-marigold); font: 700 12px var(--font-display); }
+.pdf-mobile-card > div:first-of-type { flex: 1; }
+.pdf-mobile-card b { color: var(--color-chalk); font: 18px var(--font-display); }
+.pdf-mobile-card p { margin: 5px 0 0; color: var(--muted); font-size: 10px; line-height: 1.7; }
+.pdf-mobile-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.pdf-mobile-actions a { color: var(--color-marigold); font-size: 9px; font-weight: 700; white-space: nowrap; }
+@media (max-width: 640px) {
+  .pdf-mobile-card { align-items: flex-start; flex-wrap: wrap; }
+  .pdf-mobile-actions { width: 100%; padding-left: 63px; }
+}
