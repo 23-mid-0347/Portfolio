@@ -1,34 +1,38 @@
 /* src/index.css */
-:root {
-  --dusk: #1f2a1e;
-  --marigold: #f2b632;
-  --lilac: #e3b5f0;
-  --chalk: #fbf7ee;
+@import "tailwindcss";
+
+@theme {
+  --color-dusk: #1f2a1e;
+  --color-marigold: #f2b632;
+  --color-lilac: #e3b5f0;
+  --color-sandstone: #d8c7a3;
+  --color-chalk: #fbf7ee;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: var(--dusk);
-  color: var(--chalk);
-  font-family: system-ui, sans-serif;
+@layer base {
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--color-dusk);
+    color: var(--color-chalk);
+    font-family: var(--font-body);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-lilac);
+    outline-offset: 4px;
+  }
 }
 
-.placeholder {
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  padding: 24px;
-}
-
-.placeholder h1 {
-  margin: 0 0 12px;
-  color: var(--marigold);
-  font-family: Georgia, serif;
-  font-size: clamp(40px, 8vw, 88px);
-}
-
-.placeholder p {
-  margin: 0;
-  color: var(--lilac);
+@layer components {
+  /* Marigold sticker outline around a transparent PNG/SVG cutout */
+  .cutout {
+    filter: drop-shadow(3px 0 0 var(--color-marigold))
+      drop-shadow(-3px 0 0 var(--color-marigold))
+      drop-shadow(0 3px 0 var(--color-marigold))
+      drop-shadow(0 -3px 0 var(--color-marigold));
+  }
 }
