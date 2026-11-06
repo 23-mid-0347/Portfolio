@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="portrait-halo" />
           <div className="portrait-frame">
             <img
-              src="/hero-cutout.png"
+              src="/hero-placeholder.svg"
               alt="Portrait of the portfolio owner"
               className="hero-portrait"
               onError={(event) => { event.currentTarget.style.display = 'none' }}

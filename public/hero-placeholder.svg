@@ -1,0 +1,6 @@
+<!-- Placeholder silhouette. Replace with the approved transparent portrait when available. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" role="img" aria-labelledby="title">
+  <title id="title">Portrait placeholder</title>
+  <circle cx="160" cy="120" r="70" fill="#d8c7a3" />
+  <path d="M30 400 C30 280 90 220 160 220 C230 220 290 280 290 400 Z" fill="#d8c7a3" />
+</svg>
