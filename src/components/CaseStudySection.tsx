@@ -36,6 +36,14 @@ export default function CaseStudySection() {
             {caseStudy.pageCount ? <span className="small-note">{caseStudy.pageCount} pages · PDF document</span> : null}
           </div>
           <div className="pdf-frame"><iframe src="/case-study.pdf#view=FitH" title="Course case study PDF" /></div>
+          <div className="pdf-mobile-card">
+            <span className="pdf-mobile-icon">PDF</span>
+            <div><b>{caseStudy.title || 'Course case study'}</b><p>Open the document in your browser for the best reading experience on mobile.</p></div>
+            <div className="pdf-mobile-actions">
+              <a href="/case-study.pdf" target="_blank" rel="noreferrer">Open PDF ↗</a>
+              <a href="/case-study.pdf" download>Download ↓</a>
+            </div>
+          </div>
         </div>
       ) : (
         <div className="case-study-empty">
