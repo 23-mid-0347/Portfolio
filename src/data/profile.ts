@@ -14,4 +14,5 @@ export const profile = {
   writeup: 'https://drive.google.com/file/d/178Ci9QvIHF5Twl0Z0_59aUF9RAQ03p1_/view?usp=sharing',
   ppt: 'https://docs.google.com/presentation/d/1GQ0C5V7rkjHcahwKxQqRznjTDzrOSpkb/edit?usp=sharing&ouid=102457863567932430461&rtpof=true&sd=true',
   video: 'https://drive.google.com/file/d/1Oiar4A474BqZ-nnwLzasFWSyIib5sdi4/view?usp=sharing',
+  highlights: ['Corpus analysis with NLTK', 'Finite-State Transducers and morphology', 'Text classification with Naive Bayes and CountVectorizer', 'Query-aware LLM chat-history compression'],
 }

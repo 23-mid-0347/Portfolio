@@ -16,6 +16,7 @@ export default function Hero() {
       <div className="hero-heading">
         <h1>Hi, I’m {profile.name}!</h1>
         <p>{profile.tagline}</p>
+        <p className="hero-course-meta">Guided by {profile.facultyGuide} · Register no. {profile.registerNumber}</p>
       </div>
 
       <div className="hero-grid">
@@ -51,8 +52,8 @@ export default function Hero() {
 
         <div className="hero-side hero-side-right">
           <article className="hero-note">
-            <span className="hero-note-label">PRACTICAL WORK</span>
-            <StatCallout value={stats.notebooks} label="Lab notebooks completed" />
+            <span className="hero-note-label">PROJECT LINKS</span>
+            <StatCallout value={stats.notebooks} label="Notebook files added" />
             <CurlArrow className="note-arrow arrow-left" />
           </article>
           <p className="hero-side-copy">Learning the language of people, patterns, and machines — one concept at a time.</p>

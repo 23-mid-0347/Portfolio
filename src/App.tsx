@@ -53,6 +53,7 @@ export default function App() {
           <span className="brand-name">NLP <span>/ PORTFOLIO</span></span>
         </a>
         <p>A record of learning, one question at a time.</p>
+        <a className="back-to-top" href="mailto:pooja.s2023c@vitstudent.ac.in">Contact Pooja ↗</a>
         <a className="back-to-top" href="#home">Back to top ↑</a>
       </footer>
     </div>
